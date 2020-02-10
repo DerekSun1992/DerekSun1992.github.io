@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!-- 自己写的style会覆盖掉原本的，在后面的覆盖前面的 -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="select-btn-group">
+    <div class="btn-select active" id="all-tag">All</div>
+    <div class="btn-select" id="ux-tag">UX</div>
+    <div class="btn-select" id="ui-tag">UI</div>
+    <div class="btn-select" id="front-tag">Front-end</div>
+    <div class="btn-select" id="animate-tag">Animate</div>
+  </div>
+  <div class="content">
+    <div class="item front" style="background-image: url(pic/IMG_7415_polarr.JPG); "></div>
+    <div class="item ux" style="background-image: url(pic/IMG_9730_polarr.JPG); "></div>
+    <div class="item ui" style="background-image: url(pic/IMG_3697_polarr.JPG); "></div>
+    <div class="item front" style="background-image: url(pic/IMG_0782_polarr.JPG); "></div>
+    <div class="item ux" style="background-image: url(pic/IMG_0248_polarr.JPG); "></div>
+    <div class="item animate" style="background-image: url(pic/IMG_8413_polarr.JPG); "></div>
+    <div class="item ui" style="background-image: url(pic/IMG_3697_polarr.JPG); "></div>
+    <div class="item ux" style="background-image: url(pic/IMG_9730_polarr.JPG); "></div>
+    <div class="item front" style="background-image: url(pic/IMG_2815_polarr.JPG); "></div>
+    <div class="item animate" style="background-image: url(pic/IMG_3700_polarr.JPG); "></div>
+    <div class="item animate" style="background-image: url(pic/IMG_0975_polarr.JPG); "></div>
+    <div class="item ux" style="background-image: url(pic/IMG_0248_polarr.JPG); "></div>
+    <div class="item animate" style="background-image: url(pic/IMG_0630_polarr.JPG); "></div>
+    <div class="item ui" style="background-image: url(pic/IMG_7252_polarr.JPG); "></div>
+    <div class="item front" style="background-image: url(pic/IMG_2815_polarr.JPG); "></div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".btn-select").click(function(){
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+      });
+      $("#all-tag").click(function(){
+        $(".item").fadeIn(200);
+      });
+       $("#ui-tag").click(function(){
+        $(".item").fadeOut(200);
+        $(".ui").fadeIn(200);
+      });
+        $("#ux-tag").click(function(){
+          $(".item").fadeOut(200);
+        $(".ux").fadeIn(200);
+      });
+         $("#animate-tag").click(function(){
+          $(".item").fadeOut(200);
+        $(".animate").fadeIn(200);
+      }); 
+         $("#front-tag").click(function(){
+          $(".item").fadeOut(200);
+        $(".front").fadeIn(200);
+      }); 
+    })
+  </script>
+</body>
+</html>	

@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+}
+
+.content{
+	background-color: #999;
+	/*display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;*/
+}
+
+.item{
+	width: 300px;
+	height: 20vw;
+	background-size: cover;
+	background-position: center;
+	margin: 12px 10px;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+}
+
+.select-btn-group{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.select-btn-group>.btn-select{
+	padding: 10px 24px;
+	margin-left: 6px;
+	margin-right: 6px;
+	border: 1px solid #ddd;
+	border-radius: 20px;
+}
+
+.select-btn-group>.btn-select:hover{
+	background-color: #1374bd;
+	color: white;
+	border:1px solid #1374bd;
+	transition: all 0.3s;
+}
+
+.active{
+	background-color: #1374bd;
+	color: white;
+	border:1px solid #1374bd;
+	transition: all 0.3s;
+}
